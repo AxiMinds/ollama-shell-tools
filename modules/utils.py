@@ -1,8 +1,6 @@
 import re
-import logging
 import subprocess
-import time
-import sys
+import logging
 
 def clean_and_validate_command(command):
     """Cleans and validates the generated shell command."""
@@ -44,12 +42,3 @@ def execute_shell_command(command):
         logging.error(f"Command failed: {command}")
         logging.error(f"Error: {e.stderr}")
         return "", f"Error: {e.stderr.strip()}"
-
-def display_progress(start_time, model_name, active=True):
-    """Display a progress indicator with elapsed time for a specific model."""
-    elapsed_time = time.time() - start_time
-    indicators = ['-', '/', '|', '\\']
-    indicator = indicators[int(elapsed_time * 10) % len(indicators)] if active else ' '
-    status = "Processing" if active else "Completed"
-    sys.stdout.write(f"\r{model_name:<5} {status:<10} {indicator} Elapsed time: {elapsed_time:.2f}s ")
-    sys.stdout.flush()

@@ -4,66 +4,80 @@ llms:
     model: "llama3.1"
     url: "http://127.0.0.1"
     port: "11434"
-    api_key: "your_llama_api_key_here"
+    api_key: "${OLLAMA_LLAMA_API_KEY}"
     prompts:
       system: >
         You are a command-line assistant for Ubuntu 22.04. Your task is to convert natural language instructions into a single, precise shell command. Output only the command, nothing else. If no specific path is mentioned, assume the current directory.
       default: >
         Convert the following instruction into a single shell command for Ubuntu 22.04. Output only the command, no explanations:
     use_json: true
-  llama3:
-    name: "@l3"
-    model: "llama3"
-    url: "http://127.0.0.1"
-    port: "11434"
-    api_key: "your_llama3_api_key_here"
-    prompts:
-      system: >
-        You are a command-line assistant for Ubuntu 22.04. Your task is to convert natural language instructions into a single, precise shell command. Output only the command, nothing else. If no specific path is mentioned, assume the current directory.
-      default: >
-        Convert the following instruction into a single shell command for Ubuntu 22.04. Output only the command, no explanations:
-    use_json: true
-  llava:
-    name: "@llava"
-    model: "llava"
-    url: "http://127.0.0.1"
-    port: "11434"
-    api_key: "your_llava_api_key_here"
-    prompts:
-      system: >
-        You are an image processing assistant for Ubuntu 22.04. Your task is to analyze images and provide a concise summary or detect content. Respond with a brief description only.
-      default: >
-        Analyze the given image and provide a brief summary of its contents in one sentence:
-    use_json: false
+
   phi3:
     name: "@p"
     model: "phi3"
     url: "http://127.0.0.1"
     port: "11434"
-    api_key: "your_phi3_api_key_here"
+    api_key: "${OLLAMA_PHI_API_KEY}"
     prompts:
       system: >
         You are a command-line assistant for Ubuntu 22.04. Your sole purpose is to convert natural language instructions into a single, executable shell command. Respond with only the command, no explanations or additional text. If no specific path is mentioned, assume the current directory.
       default: >
         Convert this instruction into a single, executable shell command for Ubuntu 22.04. Respond with only the command:
     use_json: false
-  phi3_medium:
-    name: "@p3med"
-    model: "phi3:medium-128k"
-    url: "http://127.0.0.1"
-    port: "11434"
-    api_key: "your_phi3_medium_api_key_here"
+
+  anthropic:
+    name: "@a"
+    model: "claude-2"
+    api_key: "${ANTHROPIC_API_KEY}"
     prompts:
       system: >
         You are a command-line assistant for Ubuntu 22.04. Your task is to convert natural language instructions into a single, precise shell command. Output only the command, nothing else. If no specific path is mentioned, assume the current directory.
       default: >
         Convert the following instruction into a single shell command for Ubuntu 22.04. Output only the command, no explanations:
-    use_json: false
-  multi_llama:
+
+  openai:
+    name: "@o"
+    model: "gpt-3.5-turbo"
+    api_key: "${OPENAI_API_KEY}"
+    prompts:
+      system: >
+        You are a command-line assistant for Ubuntu 22.04. Your task is to convert natural language instructions into a single, precise shell command. Output only the command, nothing else. If no specific path is mentioned, assume the current directory.
+      default: >
+        Convert the following instruction into a single shell command for Ubuntu 22.04. Output only the command, no explanations:
+
+multi_model:
+  dual_ollama:
     name: "@ml"
-    model: "multi_llama"
+    models: ["llama3.1", "phi3"]
     decision_model: "llama3.1"
-  multi_phi:
+    decision_prompt: >
+      Compare these shell commands and choose the most correct one for the instruction '{instruction}':
+      {commands}
+      Respond with only the number (1 or 2) of the best command, followed by '```' and the chosen command. For example:
+      1
+      ```ls -l```
+      Do not provide any explanation or additional text.
+
+  phi_llama:
     name: "@mp"
-    model: "multi_phi"
+    models: ["phi3", "llama3.1"]
     decision_model: "phi3"
+    decision_prompt: >
+      Compare these shell commands and choose the most correct one for the instruction '{instruction}':
+      {commands}
+      Respond with only the number (1 or 2) of the best command, followed by '```' and the chosen command. For example:
+      1
+      ```ls -l```
+      Do not provide any explanation or additional text.
+
+  triple_mix:
+    name: "@mix"
+    models: ["llama3.1", "phi3", "anthropic"]
+    decision_model: "openai"
+    decision_prompt: >
+      Compare these shell commands and choose the most correct one for the instruction '{instruction}':
+      {commands}
+      Respond with only the number of the best command, followed by '```' and the chosen command. For example:
+      1
+      ```ls -l```
+      Do not provide any explanation or additional text.
