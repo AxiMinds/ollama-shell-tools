@@ -1,0 +1,7 @@
+2024-08-23 22:44:40,371 - Command failed: ls the directory
+2024-08-23 22:44:40,372 - Error: ls: cannot access 'the': No such file or directory
+ls: cannot access 'directory': No such file or directory
+
+2024-08-23 22:44:53,320 - Command failed: give me a directory listing.
+2024-08-23 22:44:53,321 - Error: /bin/sh: 1: give: not found
+

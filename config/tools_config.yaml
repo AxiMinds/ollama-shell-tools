@@ -1,0 +1,7 @@
+tools:
+  list_tools:
+    description: "Lists all available tools."
+    module: "list_tools"
+  example_tool:
+    description: "This is an example tool that does something interesting."
+    module: "example_tool"

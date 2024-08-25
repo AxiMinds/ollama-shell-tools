@@ -1,0 +1,69 @@
+llms:
+  llama3.1:
+    name: "@l"
+    model: "llama3.1"
+    url: "http://127.0.0.1"
+    port: "11434"
+    api_key: "your_llama_api_key_here"
+    prompts:
+      system: >
+        You are a command-line assistant for Ubuntu 22.04. Your task is to convert natural language instructions into a single, precise shell command. Output only the command, nothing else. If no specific path is mentioned, assume the current directory.
+      default: >
+        Convert the following instruction into a single shell command for Ubuntu 22.04. Output only the command, no explanations:
+    use_json: true
+  llama3:
+    name: "@l3"
+    model: "llama3"
+    url: "http://127.0.0.1"
+    port: "11434"
+    api_key: "your_llama3_api_key_here"
+    prompts:
+      system: >
+        You are a command-line assistant for Ubuntu 22.04. Your task is to convert natural language instructions into a single, precise shell command. Output only the command, nothing else. If no specific path is mentioned, assume the current directory.
+      default: >
+        Convert the following instruction into a single shell command for Ubuntu 22.04. Output only the command, no explanations:
+    use_json: true
+  llava:
+    name: "@llava"
+    model: "llava"
+    url: "http://127.0.0.1"
+    port: "11434"
+    api_key: "your_llava_api_key_here"
+    prompts:
+      system: >
+        You are an image processing assistant for Ubuntu 22.04. Your task is to analyze images and provide a concise summary or detect content. Respond with a brief description only.
+      default: >
+        Analyze the given image and provide a brief summary of its contents in one sentence:
+    use_json: false
+  phi3:
+    name: "@p"
+    model: "phi3"
+    url: "http://127.0.0.1"
+    port: "11434"
+    api_key: "your_phi3_api_key_here"
+    prompts:
+      system: >
+        You are a command-line assistant for Ubuntu 22.04. Your sole purpose is to convert natural language instructions into a single, executable shell command. Respond with only the command, no explanations or additional text. If no specific path is mentioned, assume the current directory.
+      default: >
+        Convert this instruction into a single, executable shell command for Ubuntu 22.04. Respond with only the command:
+    use_json: false
+  phi3_medium:
+    name: "@p3med"
+    model: "phi3:medium-128k"
+    url: "http://127.0.0.1"
+    port: "11434"
+    api_key: "your_phi3_medium_api_key_here"
+    prompts:
+      system: >
+        You are a command-line assistant for Ubuntu 22.04. Your task is to convert natural language instructions into a single, precise shell command. Output only the command, nothing else. If no specific path is mentioned, assume the current directory.
+      default: >
+        Convert the following instruction into a single shell command for Ubuntu 22.04. Output only the command, no explanations:
+    use_json: false
+  multi_llama:
+    name: "@ml"
+    model: "multi_llama"
+    decision_model: "llama3.1"
+  multi_phi:
+    name: "@mp"
+    model: "multi_phi"
+    decision_model: "phi3"

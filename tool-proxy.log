@@ -1,0 +1,695 @@
+2024-08-23 22:55:03,262 - Command executed: ls
+2024-08-23 22:55:03,262 - Output: tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-23 22:55:07,088 - Command executed: df
+2024-08-23 22:55:07,088 - Output: Filesystem      1K-blocks      Used Available Use% Mounted on
+tmpfs             3255140     10556   3244584   1% /run
+/dev/nvme0n1p1  263112772  10154740 239519876   5% /
+tmpfs            16275692         0  16275692   0% /dev/shm
+tmpfs                5120         0      5120   0% /run/lock
+tmpfs            16275692   1246424  15029268   8% /tmp
+/dev/mmcblk0p1  236906320    132764 224666600   1% /media/mmcboot
+/dev/nvme0n1p5 1393264980 703193660 619224304  54% /mnt/nvme_partition5
+/dev/zram1          47960     33812     10564  77% /var/log
+tmpfs             3255136    497396   2757740  16% /run/user/1000
+
+2024-08-23 22:55:08,547 - Command executed: df -h
+2024-08-23 22:55:08,548 - Output: Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           3.2G   11M  3.1G   1% /run
+/dev/nvme0n1p1  251G  9.7G  229G   5% /
+tmpfs            16G     0   16G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            16G  1.2G   15G   8% /tmp
+/dev/mmcblk0p1  226G  130M  215G   1% /media/mmcboot
+/dev/nvme0n1p5  1.3T  671G  591G  54% /mnt/nvme_partition5
+/dev/zram1       47M   34M   11M  77% /var/log
+tmpfs           3.2G  486M  2.7G  16% /run/user/1000
+
+2024-08-23 23:00:17,952 - Command executed: ls
+2024-08-23 23:00:17,953 - Output: tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-23 23:00:19,685 - Command executed: df -h
+2024-08-23 23:00:19,686 - Output: Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           3.2G   11M  3.1G   1% /run
+/dev/nvme0n1p1  251G  9.7G  229G   5% /
+tmpfs            16G     0   16G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            16G  1.2G   15G   8% /tmp
+/dev/mmcblk0p1  226G  130M  215G   1% /media/mmcboot
+/dev/nvme0n1p5  1.3T  671G  591G  54% /mnt/nvme_partition5
+/dev/zram1       47M   34M   11M  77% /var/log
+tmpfs           3.2G  486M  2.7G  16% /run/user/1000
+
+2024-08-23 23:00:32,542 - Failed to get command from LLaMA 3.1: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-08-23 23:00:32,546 - Command failed: Error: Failed to get a response from LLaMA 3.1
+2024-08-23 23:00:32,547 - Error: /bin/sh: 1: Error:: not found
+
+2024-08-23 23:01:58,316 - INFO - Command executed: ls
+2024-08-23 23:01:58,317 - INFO - Output: tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-23 23:02:01,143 - INFO - Command executed: df -h
+2024-08-23 23:02:01,144 - INFO - Output: Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           3.2G   11M  3.1G   1% /run
+/dev/nvme0n1p1  251G  9.7G  229G   5% /
+tmpfs            16G     0   16G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            16G  1.2G   15G   8% /tmp
+/dev/mmcblk0p1  226G  130M  215G   1% /media/mmcboot
+/dev/nvme0n1p5  1.3T  671G  591G  54% /mnt/nvme_partition5
+/dev/zram1       47M   34M   11M  77% /var/log
+tmpfs           3.2G  486M  2.7G  16% /run/user/1000
+
+2024-08-23 23:02:13,032 - ERROR - Failed to get command from LLaMA 3.1: 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-08-23 23:03:27,432 - INFO - Command executed: ls
+2024-08-23 23:03:27,432 - INFO - Output: tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-23 23:03:38,978 - ERROR - Failed to get command from LLaMA 3.1: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-08-23 23:05:23,868 - INFO - Command executed: ls
+2024-08-23 23:05:23,869 - INFO - Output: tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-23 23:05:28,717 - ERROR - Failed to get command from LLaMA 3.1: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-08-23 23:06:46,083 - INFO - Command executed: ls
+2024-08-23 23:06:46,084 - INFO - Output: tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-23 23:06:49,850 - INFO - Command executed: df -h
+2024-08-23 23:06:49,851 - INFO - Output: Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           3.2G   11M  3.1G   1% /run
+/dev/nvme0n1p1  251G  9.7G  229G   5% /
+tmpfs            16G     0   16G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            16G  1.2G   15G   8% /tmp
+/dev/mmcblk0p1  226G  130M  215G   1% /media/mmcboot
+/dev/nvme0n1p5  1.3T  671G  591G  54% /mnt/nvme_partition5
+/dev/zram1       47M   34M   11M  77% /var/log
+tmpfs           3.2G  486M  2.7G  16% /run/user/1000
+
+2024-08-23 23:06:54,899 - ERROR - Failed to get command from LLaMA 3.1: 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+2024-08-23 23:13:01,800 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-08-23 23:13:01,802 - DEBUG - load_verify_locations cafile='/home/aximinds/miniforge3/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-08-23 23:13:04,264 - INFO - Command executed: ls
+2024-08-23 23:13:04,265 - INFO - Output: tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-23 23:13:11,423 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are an assistant that converts natural language instructions into shell commands.'}, {'role': 'user', 'content': 'help me list files'}], 'model': 'llama3.1', 'max_tokens': 50, 'temperature': 0.2}}
+2024-08-23 23:13:11,485 - DEBUG - Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+2024-08-23 23:13:11,487 - DEBUG - connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+2024-08-23 23:13:16,533 - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffffb7aa80a0>
+2024-08-23 23:13:16,533 - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0xffffb7b82ec0> server_hostname='api.openai.com' timeout=5.0
+2024-08-23 23:13:16,547 - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0xffffb7a77f10>
+2024-08-23 23:13:16,547 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2024-08-23 23:13:16,548 - DEBUG - send_request_headers.complete
+2024-08-23 23:13:16,548 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2024-08-23 23:13:16,548 - DEBUG - send_request_body.complete
+2024-08-23 23:13:16,548 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2024-08-23 23:13:16,624 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 401, b'Unauthorized', [(b'Date', b'Sat, 24 Aug 2024 05:13:16 GMT'), (b'Content-Type', b'application/json; charset=utf-8'), (b'Content-Length', b'267'), (b'Connection', b'keep-alive'), (b'vary', b'Origin'), (b'x-request-id', b'req_ae01e73057fb7a63119f8e32b804d6ee'), (b'strict-transport-security', b'max-age=15552000; includeSubDomains; preload'), (b'CF-Cache-Status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=MIA9AYsyTemsQ2kYIxNfSpG_BrTYzlPI5OBfd2gHAys-1724476396-1.0.1.1-OxAdbfuFB3.9LYAkW0vim0hQILxlH_W37Ho_Ol1Y.yZS2T8cNpx77i4vGy4XpQ1yAtu1S0w0Ki6KsmqM7FrWTQ; path=/; expires=Sat, 24-Aug-24 05:43:16 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=kEdAtv5fUjj.mIlFMEOK4J6IZPIWc0A9bKqQwRzeiQM-1724476396624-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'8b80da267b052c69-SLC'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2024-08-23 23:13:16,626 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2024-08-23 23:13:16,626 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2024-08-23 23:13:16,626 - DEBUG - receive_response_body.complete
+2024-08-23 23:13:16,626 - DEBUG - response_closed.started
+2024-08-23 23:13:16,626 - DEBUG - response_closed.complete
+2024-08-23 23:13:16,626 - DEBUG - HTTP Response: POST https://api.openai.com/v1/chat/completions "401 Unauthorized" Headers([('date', 'Sat, 24 Aug 2024 05:13:16 GMT'), ('content-type', 'application/json; charset=utf-8'), ('content-length', '267'), ('connection', 'keep-alive'), ('vary', 'Origin'), ('x-request-id', 'req_ae01e73057fb7a63119f8e32b804d6ee'), ('strict-transport-security', 'max-age=15552000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=MIA9AYsyTemsQ2kYIxNfSpG_BrTYzlPI5OBfd2gHAys-1724476396-1.0.1.1-OxAdbfuFB3.9LYAkW0vim0hQILxlH_W37Ho_Ol1Y.yZS2T8cNpx77i4vGy4XpQ1yAtu1S0w0Ki6KsmqM7FrWTQ; path=/; expires=Sat, 24-Aug-24 05:43:16 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=kEdAtv5fUjj.mIlFMEOK4J6IZPIWc0A9bKqQwRzeiQM-1724476396624-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '8b80da267b052c69-SLC'), ('alt-svc', 'h3=":443"; ma=86400')])
+2024-08-23 23:13:16,626 - DEBUG - request_id: req_ae01e73057fb7a63119f8e32b804d6ee
+2024-08-23 23:13:16,627 - DEBUG - Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/openai/_base_client.py", line 1025, in _request
+    response.raise_for_status()
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_models.py", line 761, in raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '401 Unauthorized' for url 'https://api.openai.com/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401
+2024-08-23 23:13:16,628 - DEBUG - Not retrying
+2024-08-23 23:13:16,628 - DEBUG - Re-raising status error
+2024-08-23 23:13:16,629 - ERROR - Failed to get command from LLaMA 3.1: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your_api*****here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2024-08-23 23:14:14,678 - DEBUG - close.started
+2024-08-23 23:14:14,679 - DEBUG - close.complete
+2024-08-23 23:14:26,823 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-08-23 23:14:26,826 - DEBUG - load_verify_locations cafile='/home/aximinds/miniforge3/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-08-23 23:14:30,328 - INFO - Command executed: [A[B
+2024-08-23 23:14:30,329 - INFO - Output: 
+2024-08-23 23:14:31,207 - INFO - Command executed: ls
+2024-08-23 23:14:31,208 - INFO - Output: tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-23 23:14:36,946 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are an assistant that converts natural language instructions into shell commands.'}, {'role': 'user', 'content': 'help list directory contents'}], 'model': 'llama3.1', 'max_tokens': 50, 'temperature': 0.2}}
+2024-08-23 23:14:36,974 - DEBUG - Sending HTTP Request: POST http://100.81.1.192:11434/v1/chat/completions
+2024-08-23 23:14:36,975 - DEBUG - connect_tcp.started host='100.81.1.192' port=11434 local_address=None timeout=5.0 socket_options=None
+2024-08-23 23:14:36,977 - DEBUG - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(111, 'Connection refused'))
+2024-08-23 23:14:36,978 - DEBUG - Encountered Exception
+Traceback (most recent call last):
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 99, in handle_request
+    raise exc
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 76, in handle_request
+    stream = self._connect(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 122, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 205, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/aximinds/miniforge3/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/openai/_base_client.py", line 978, in _request
+    response = self._client.send(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/aximinds/miniforge3/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+2024-08-23 23:14:36,981 - DEBUG - 1 retry left
+2024-08-23 23:14:36,981 - INFO - Retrying request to /chat/completions in 0.898054 seconds
+2024-08-23 23:14:37,881 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are an assistant that converts natural language instructions into shell commands.'}, {'role': 'user', 'content': 'help list directory contents'}], 'model': 'llama3.1', 'max_tokens': 50, 'temperature': 0.2}}
+2024-08-23 23:14:37,884 - DEBUG - Sending HTTP Request: POST http://100.81.1.192:11434/v1/chat/completions
+2024-08-23 23:14:37,886 - DEBUG - connect_tcp.started host='100.81.1.192' port=11434 local_address=None timeout=5.0 socket_options=None
+2024-08-23 23:14:37,887 - DEBUG - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(111, 'Connection refused'))
+2024-08-23 23:14:37,887 - DEBUG - Encountered Exception
+Traceback (most recent call last):
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 99, in handle_request
+    raise exc
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 76, in handle_request
+    stream = self._connect(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 122, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 205, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/aximinds/miniforge3/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/openai/_base_client.py", line 978, in _request
+    response = self._client.send(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/aximinds/miniforge3/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+2024-08-23 23:14:37,890 - DEBUG - 0 retries left
+2024-08-23 23:14:37,891 - INFO - Retrying request to /chat/completions in 1.815115 seconds
+2024-08-23 23:14:39,708 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are an assistant that converts natural language instructions into shell commands.'}, {'role': 'user', 'content': 'help list directory contents'}], 'model': 'llama3.1', 'max_tokens': 50, 'temperature': 0.2}}
+2024-08-23 23:14:39,709 - DEBUG - Sending HTTP Request: POST http://100.81.1.192:11434/v1/chat/completions
+2024-08-23 23:14:39,710 - DEBUG - connect_tcp.started host='100.81.1.192' port=11434 local_address=None timeout=5.0 socket_options=None
+2024-08-23 23:14:39,710 - DEBUG - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(111, 'Connection refused'))
+2024-08-23 23:14:39,711 - DEBUG - Encountered Exception
+Traceback (most recent call last):
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 99, in handle_request
+    raise exc
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 76, in handle_request
+    stream = self._connect(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 122, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 205, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/aximinds/miniforge3/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/openai/_base_client.py", line 978, in _request
+    response = self._client.send(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/aximinds/miniforge3/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+2024-08-23 23:14:39,711 - DEBUG - Raising connection error
+2024-08-23 23:14:39,711 - ERROR - Failed to get command from LLaMA 3.1: Connection error.
+2024-08-23 23:20:11,872 - DEBUG - load_ssl_context verify=True cert=None trust_env=True http2=False
+2024-08-23 23:20:11,876 - DEBUG - load_verify_locations cafile='/home/aximinds/miniforge3/lib/python3.10/site-packages/certifi/cacert.pem'
+2024-08-23 23:20:20,656 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are an assistant that converts natural language instructions into shell commands.'}, {'role': 'user', 'content': 'help me list directory contents'}], 'model': 'llama3.1', 'max_tokens': 50, 'temperature': 0.2}}
+2024-08-23 23:20:20,711 - DEBUG - Sending HTTP Request: POST http://100.81.1.192:11434/v1/chat/completions
+2024-08-23 23:20:20,714 - DEBUG - connect_tcp.started host='100.81.1.192' port=11434 local_address=None timeout=5.0 socket_options=None
+2024-08-23 23:20:20,720 - DEBUG - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(111, 'Connection refused'))
+2024-08-23 23:20:20,721 - DEBUG - Encountered Exception
+Traceback (most recent call last):
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 99, in handle_request
+    raise exc
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 76, in handle_request
+    stream = self._connect(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 122, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 205, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/aximinds/miniforge3/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/openai/_base_client.py", line 978, in _request
+    response = self._client.send(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/aximinds/miniforge3/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+2024-08-23 23:20:20,726 - DEBUG - 1 retry left
+2024-08-23 23:20:20,726 - INFO - Retrying request to /chat/completions in 0.962250 seconds
+2024-08-23 23:20:21,690 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are an assistant that converts natural language instructions into shell commands.'}, {'role': 'user', 'content': 'help me list directory contents'}], 'model': 'llama3.1', 'max_tokens': 50, 'temperature': 0.2}}
+2024-08-23 23:20:21,691 - DEBUG - Sending HTTP Request: POST http://100.81.1.192:11434/v1/chat/completions
+2024-08-23 23:20:21,692 - DEBUG - connect_tcp.started host='100.81.1.192' port=11434 local_address=None timeout=5.0 socket_options=None
+2024-08-23 23:20:21,692 - DEBUG - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(111, 'Connection refused'))
+2024-08-23 23:20:21,692 - DEBUG - Encountered Exception
+Traceback (most recent call last):
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 99, in handle_request
+    raise exc
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 76, in handle_request
+    stream = self._connect(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 122, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 205, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/aximinds/miniforge3/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/openai/_base_client.py", line 978, in _request
+    response = self._client.send(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/aximinds/miniforge3/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+2024-08-23 23:20:21,693 - DEBUG - 0 retries left
+2024-08-23 23:20:21,693 - INFO - Retrying request to /chat/completions in 1.578332 seconds
+2024-08-23 23:20:23,274 - DEBUG - Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are an assistant that converts natural language instructions into shell commands.'}, {'role': 'user', 'content': 'help me list directory contents'}], 'model': 'llama3.1', 'max_tokens': 50, 'temperature': 0.2}}
+2024-08-23 23:20:23,277 - DEBUG - Sending HTTP Request: POST http://100.81.1.192:11434/v1/chat/completions
+2024-08-23 23:20:23,278 - DEBUG - connect_tcp.started host='100.81.1.192' port=11434 local_address=None timeout=5.0 socket_options=None
+2024-08-23 23:20:23,279 - DEBUG - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(111, 'Connection refused'))
+2024-08-23 23:20:23,280 - DEBUG - Encountered Exception
+Traceback (most recent call last):
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 69, in map_httpcore_exceptions
+    yield
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 233, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 99, in handle_request
+    raise exc
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 76, in handle_request
+    stream = self._connect(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 122, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 205, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/home/aximinds/miniforge3/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/openai/_base_client.py", line 978, in _request
+    response = self._client.send(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_client.py", line 1015, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 232, in handle_request
+    with map_httpcore_exceptions():
+  File "/home/aximinds/miniforge3/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/aximinds/miniforge3/lib/python3.10/site-packages/httpx/_transports/default.py", line 86, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+2024-08-23 23:20:23,282 - DEBUG - Raising connection error
+2024-08-23 23:20:23,283 - ERROR - Failed to get command from LLaMA 3.1: Connection error.
+2024-08-23 23:24:55,700 - INFO - Command executed: ls
+2024-08-23 23:24:55,701 - INFO - Output: tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-23 23:25:53,975 - INFO - Command executed: @p show directories
+2024-08-23 23:25:53,975 - INFO - Output: 
+2024-08-23 23:25:59,040 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-23 23:26:01,749 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-23 23:27:21,051 - INFO - Command executed: ls
+2024-08-23 23:27:21,052 - INFO - Output: tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-23 23:27:29,412 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-23 23:27:32,467 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-23 23:32:20,707 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-23 23:32:27,142 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-23 23:50:35,000 - INFO - Command executed: ls
+2024-08-23 23:50:35,000 - INFO - Output: tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-23 23:50:43,481 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-23 23:51:00,379 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-23 23:51:00,384 - INFO - Command executed: ls
+2024-08-23 23:51:00,384 - INFO - Output: tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-24 00:04:29,823 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-24 00:04:46,693 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-24 00:04:46,697 - INFO - Command executed: un
+2024-08-24 00:04:46,697 - INFO - Output: 
+2024-08-24 00:09:09,310 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-24 00:09:13,800 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-24 00:09:13,805 - INFO - Command executed: `
+2024-08-24 00:09:13,805 - INFO - Output: 
+2024-08-24 00:09:28,559 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-24 00:09:31,109 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-24 00:09:31,114 - INFO - Command executed: To
+2024-08-24 00:09:31,114 - INFO - Output: 
+2024-08-24 00:10:57,792 - INFO - Command executed: ls
+2024-08-24 00:10:57,792 - INFO - Output: tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-24 00:11:04,115 - INFO - Command executed: df -h
+2024-08-24 00:11:04,116 - INFO - Output: Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           3.2G   11M  3.1G   1% /run
+/dev/nvme0n1p1  251G  9.7G  229G   5% /
+tmpfs            16G     0   16G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            16G  1.2G   15G   8% /tmp
+/dev/mmcblk0p1  226G  130M  215G   1% /media/mmcboot
+/dev/nvme0n1p5  1.3T  671G  591G  54% /mnt/nvme_partition5
+/dev/zram1       47M   33M   11M  76% /var/log
+tmpfs           3.2G  486M  2.7G  16% /run/user/1000
+
+2024-08-24 00:11:18,952 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-24 00:11:24,288 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-24 00:14:52,174 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-24 00:14:52,672 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-24 00:14:53,569 - ERROR - Failed to decode JSON chunk: b'data: [DONE]'
+2024-08-24 00:46:06,444 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-24 00:46:38,600 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-24 00:46:39,050 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-24 00:46:39,690 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-24 00:50:05,050 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-24 00:50:05,770 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-24 00:50:07,086 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-24 00:50:07,754 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-24 00:52:30,951 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-24 00:52:31,659 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-24 00:52:32,975 - ERROR - Invalid JSON chunk: [DONE]
+2024-08-24 00:52:32,979 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-24 00:52:33,616 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-24 00:52:34,069 - ERROR - Invalid JSON chunk: [DONE]
+2024-08-24 01:18:53,870 - INFO - Command executed: ls
+2024-08-24 01:18:53,871 - INFO - Output: config
+filestructure.md
+main.py
+modules
+tests
+tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-24 01:18:59,362 - INFO - Command executed: df -h
+2024-08-24 01:18:59,363 - INFO - Output: Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           3.2G   11M  3.1G   1% /run
+/dev/nvme0n1p1  251G  9.7G  229G   5% /
+tmpfs            16G     0   16G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            16G  1.2G   15G   8% /tmp
+/dev/mmcblk0p1  226G  130M  215G   1% /media/mmcboot
+/dev/nvme0n1p5  1.3T  671G  591G  54% /mnt/nvme_partition5
+/dev/zram1       47M   33M   11M  76% /var/log
+tmpfs           3.2G  486M  2.7G  16% /run/user/1000
+
+2024-08-24 01:24:44,602 - INFO - Command executed: ls
+2024-08-24 01:24:44,603 - INFO - Output: config
+filestructure.md
+main.py
+modules
+tests
+tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-24 01:26:30,278 - INFO - Command executed: ls
+2024-08-24 01:26:30,278 - INFO - Output: config
+filestructure.md
+main.py
+modules
+tests
+tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-24 01:35:24,905 - INFO - Command executed: ls
+2024-08-24 01:35:24,905 - INFO - Output: config
+filestructure.md
+main.py
+modules
+tests
+tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-24 01:43:33,755 - INFO - Command executed: ls
+2024-08-24 01:43:33,755 - INFO - Output: config
+filestructure.md
+main.py
+modules
+tests
+tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-24 01:43:37,440 - INFO - Command executed: ls -al
+2024-08-24 01:43:37,440 - INFO - Output: total 92
+drwxrwxr-x 5 aximinds aximinds  4096 Aug 24 00:45 .
+drwxrwxr-x 5 aximinds aximinds  4096 Aug 23 22:34 ..
+drwxrwxr-x 2 aximinds aximinds  4096 Aug 24 01:14 config
+-rw-rw-r-- 1 aximinds aximinds    33 Aug 23 23:11 .env
+-rw-rw-r-- 1 aximinds aximinds  1337 Aug 24 00:31 filestructure.md
+-rw-rw-r-- 1 aximinds aximinds  1070 Aug 24 00:33 main.py
+drwxrwxr-x 4 aximinds aximinds  4096 Aug 24 01:38 modules
+drwxrwxr-x 3 aximinds aximinds  4096 Aug 24 01:17 tests
+-rw-rw-r-- 1 aximinds aximinds 42766 Aug 24 01:43 tool-proxy.log
+-rw-rw-r-- 1 aximinds aximinds   334 Aug 23 22:44 tool-test.log
+-rw-rw-r-- 1 aximinds aximinds  5277 Aug 24 00:14 tool-test.py
+
+2024-08-24 01:54:23,230 - INFO - Command executed: ls
+2024-08-24 01:54:23,231 - INFO - Output: config
+filestructure.md
+main.py
+modules
+tests
+tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-24 01:54:39,997 - INFO - Command executed: ls
+2024-08-24 01:54:39,997 - INFO - Output: config
+filestructure.md
+main.py
+modules
+tests
+tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-24 02:42:33,499 - INFO - Command executed: ls
+2024-08-24 02:42:33,500 - INFO - Output: config
+filestructure.md
+main.py
+modules
+tests
+tool-proxy.log
+tool-test.log
+tool-test.py
+
+2024-08-24 02:52:53,783 - INFO - Command executed: ls
+2024-08-24 02:52:56,388 - INFO - Command executed: df -h
+2024-08-24 02:55:28,063 - INFO - Command executed: ls
+2024-08-24 02:55:34,422 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11435
+2024-08-24 02:55:34,423 - ERROR - Failed to get command from @p: HTTPConnectionPool(host='127.0.0.1', port=11435): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0xffffa750cdc0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-08-24 02:55:41,823 - INFO - Command executed: Error: Failed to get a response from @p
+2024-08-24 02:58:31,118 - INFO - Command executed: ls
+2024-08-24 02:58:36,207 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-24 02:58:45,961 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-24 02:58:47,731 - ERROR - Failed to decode JSON chunk: b'data: [DONE]'
+2024-08-24 02:58:53,791 - INFO - Command executed: ```bashls-a```
+2024-08-24 03:09:42,607 - INFO - Command executed: ls
+2024-08-24 03:11:04,368 - INFO - Command executed: ls
+2024-08-24 03:13:00,220 - INFO - Command executed: ls
+2024-08-24 03:13:18,691 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:11434
+2024-08-24 03:13:29,861 - DEBUG - http://127.0.0.1:11434 "POST /v1/chat/completions HTTP/1.1" 200 None
+2024-08-24 03:13:32,036 - ERROR - Failed to decode JSON chunk: b'data: [DONE]'
+2024-08-24 03:13:37,869 - INFO - Command executed: ls-lS/path/to/directory

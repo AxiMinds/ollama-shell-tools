@@ -1,0 +1,9 @@
+prompts:
+  default:
+    system_prompt: "Convert the following user instructions into precise shell commands. Keep the commands concise and valid for a Linux environment."
+
+  list_files:
+    system_prompt: "Provide a Linux command to list the files in a directory. The command should be as concise as possible."
+
+  check_disk_space:
+    system_prompt: "Give the Linux command to check available disk space."
