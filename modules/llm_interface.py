@@ -69,6 +69,9 @@ def get_llm_command(instruction, llm_details, start_time, max_retries=3, use_cac
         with ThreadPoolExecutor(max_workers=1) as executor:
             future = executor.submit(process_stream)
             try:
+                while not future.done():
+                    display_progress(start_time, llm_details['model'])
+                    time.sleep(0.1)
                 future.result(timeout=timeout)
             except TimeoutError:
                 print(f"\n{llm_details['model']} request timed out after {timeout} seconds.")
