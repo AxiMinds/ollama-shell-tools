@@ -21,3 +21,13 @@ env/
 # Ignore IDE-specific files (e.g., for VSCode)
 .vscode/
 *.swp
+
+# SA-007: never track env/secret files (templates allowed)
+.env
+.env.*
+**/.env
+**/.env.*
+.dev.vars
+**/.dev.vars
+!**/*.example
+!.env.example
